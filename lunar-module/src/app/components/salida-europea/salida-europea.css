@@ -1,0 +1,132 @@
+
+.salida-europea-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.result-card {
+  background: white;
+  border-radius: 15px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.european-theme {
+  border-top: 10px solid #003399;
+  border-bottom: 10px solid #FFCC00;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #003399 0%, #0066CC 100%);
+  color: white;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.close-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(90deg);
+}
+
+.validation-status {
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.validation-status.valid {
+  background: #4CAF50;
+  color: white;
+}
+
+.validation-status.invalid {
+  background: #f44336;
+  color: white;
+}
+
+.status-icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.rock-details {
+  padding: 1.5rem;
+}
+
+.detail-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row.full-width {
+  grid-template-columns: 220px 1fr;
+}
+
+.detail-row.temperature-highlight {
+  background: #E3F2FD;
+  font-weight: 600;
+}
+
+.label {
+  font-weight: 600;
+  color: #555;
+}
+
+.value {
+  color: #222;
+}
+
+.footer-flag {
+  text-align: center;
+  padding: 1rem;
+  background: #f5f5f5;
+  font-weight: 600;
+  color: #666;
+}

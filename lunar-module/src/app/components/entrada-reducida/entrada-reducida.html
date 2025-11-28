@@ -1,0 +1,123 @@
+<p>entrada-reducida works!</p>
+/*
+<div class="entrada-reducida-container">
+  <h2>⚡ Entrada Rápida - Formato Compacto</h2>
+  
+  <form (ngSubmit)="onSubmit()" #rocaForm="ngForm" class="compact-form">
+    <div class="compact-grid">
+      <input 
+        type="text" 
+        name="id"
+        [(ngModel)]="roca.id" 
+        placeholder="ID (ej: AB1234CD)"
+        maxlength="8"
+        required
+      />
+
+      <input 
+        type="text" 
+        name="nombre"
+        [(ngModel)]="roca.nombre" 
+        placeholder="Nombre del mineral"
+        required
+      />
+
+      <select 
+        name="grupoOrigen"
+        [(ngModel)]="roca.grupoOrigen"
+      >
+        <option value="" disabled>Grupo/Origen</option>
+        <option *ngFor="let grupo of gruposOrigen" [value]="grupo">
+          {{ grupo | titlecase }}
+        </option>
+      </select>
+
+      <input 
+        type="number" 
+        name="dureza"
+        [(ngModel)]="roca.dureza" 
+        placeholder="Dureza (1-10)"
+        min="1" 
+        max="10"
+      />
+
+      <select 
+        name="tamanoGrano"
+        [(ngModel)]="roca.tamanoGrano"
+      >
+        <option value="" disabled>Tamaño de grano</option>
+        <option *ngFor="let tamano of tamanosGrano" [value]="tamano">
+          {{ tamano.replace('_', ' ') | titlecase }}
+        </option>
+      </select>
+
+      <select 
+        name="clasificacion"
+        [(ngModel)]="roca.clasificacion"
+      >
+        <option value="" disabled>Clasificación</option>
+        <option *ngFor="let clasif of clasificaciones" [value]="clasif">
+          {{ clasif | titlecase }}
+        </option>
+      </select>
+
+      <input 
+        type="number" 
+        name="tamanoCristales"
+        [(ngModel)]="roca.tamanoCristales" 
+        placeholder="Tamaño cristales (0-10)"
+        min="0" 
+        max="10"
+      />
+
+      <input 
+        type="number" 
+        name="temperatura"
+        [(ngModel)]="roca.temperaturaFormacion" 
+        placeholder="Temperatura (K)"
+        min="-100" 
+        max="100"
+      />
+
+      <select 
+        name="textura"
+        [(ngModel)]="roca.textura"
+      >
+        <option value="" disabled>Textura</option>
+        <option *ngFor="let text of texturas" [value]="text">
+          {{ text | titlecase }}
+        </option>
+      </select>
+
+      <input 
+        type="text" 
+        name="estructura"
+        [(ngModel)]="roca.estructura"
+        placeholder="Estructura"
+        class="full-width"
+      />
+
+      <input 
+        type="text" 
+        name="formaGranos"
+        [(ngModel)]="roca.formaGranos"
+        placeholder="Forma de los granos"
+        class="full-width"
+      />
+    </div>
+
+    <div *ngIf="mensajeError" class="error-message-compact">
+      ⚠️ {{ mensajeError }}
+    </div>
+
+    <div class="button-group-compact">
+      <button type="submit" class="btn-analyze">
+        🚀 Analizar
+      </button>
+      <button type="button" class="btn-clear" (click)="limpiarFormulario()">
+        🔄
+      </button>
+    </div>
+  </form>
+</div>
+*/

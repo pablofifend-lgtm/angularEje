@@ -1,0 +1,140 @@
+<p>mision-control works!</p>
+/*
+<div class="mision-control-container">
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <span class="moon-icon">🌙</span>
+      <h1>Módulo Lunar - Control de Misión</h1>
+    </div>
+    <div class="astronaut-info">
+      <span class="astronaut-icon">👨‍🚀</span>
+      <div class="astronaut-details">
+        <strong>{{ astronauta.dameNombre() }}</strong>
+        <small>ID: {{ astronauta.dameId() }} | Edad: {{ astronauta.dameEdad() }} años</small>
+      </div>
+    </div>
+  </header>
+
+  <!-- Control Panel -->
+  <div class="control-panel">
+    <div class="panel-section">
+      <h3>🎯 Criterio de Validación</h3>
+      <div class="button-group">
+        <button 
+          *ngFor="let v of validadores; let i = index"
+          [class.active]="validadorActual === v.validador"
+          (click)="cambiarValidador(i)"
+          class="btn-validator"
+        >
+          {{ v.nombre }}
+        </button>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <h3>📝 Tipo de Entrada</h3>
+      <div class="button-group">
+        <button 
+          [class.active]="tipoEntrada === 'extendida'"
+          (click)="cambiarTipoEntrada('extendida')"
+          class="btn-input"
+        >
+          Extendida
+        </button>
+        <button 
+          [class.active]="tipoEntrada === 'reducida'"
+          (click)="cambiarTipoEntrada('reducida')"
+          class="btn-input"
+        >
+          Reducida
+        </button>
+      </div>
+    </div>
+
+    <div class="panel-section">
+      <h3>🌍 Formato de Salida</h3>
+      <div class="button-group">
+        <button 
+          [class.active]="tipoSalida === 'europea'"
+          (click)="cambiarTipoSalida('europea')"
+          class="btn-output"
+        >
+          🇪🇺 Europeo
+        </button>
+        <button 
+          [class.active]="tipoSalida === 'americana'"
+          (click)="cambiarTipoSalida('americana')"
+          class="btn-output"
+        >
+          🇺🇸 Americano
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulario de Entrada -->
+  <div class="entrada-container">
+    <app-entrada-extendida 
+      *ngIf="tipoEntrada === 'extendida'"
+      (rocaCreada)="onRocaCreada($event)"
+      (validacionRequerida)="analizarRoca()"
+    ></app-entrada-extendida>
+
+    <app-entrada-reducida 
+      *ngIf="tipoEntrada === 'reducida'"
+      (rocaCreada)="onRocaCreada($event)"
+      (validacionRequerida)="analizarRoca()"
+    ></app-entrada-reducida>
+  </div>
+
+  <!-- Pruebas Rápidas -->
+  <div class="quick-tests">
+    <h3>🧪 Pruebas Rápidas</h3>
+    <div class="test-buttons">
+      <button (click)="probarRocaIgnea()" class="btn-test ignea">
+        🔥 Probar Roca Ígnea Válida
+      </button>
+      <button (click)="probarRocaMetamorfica()" class="btn-test metamorfica">
+        💎 Probar Roca Metamórfica Válida
+      </button>
+      <button (click)="probarRocaSedimentaria()" class="btn-test sedimentaria">
+        🏜️ Probar Roca Sedimentaria Válida
+      </button>
+    </div>
+  </div>
+
+  <!-- Historial -->
+  <div class="historial-container" *ngIf="historial.length > 0">
+    <div class="historial-header">
+      <h3>📊 Historial de Análisis</h3>
+      <button (click)="limpiarHistorial()" class="btn-clear-history">
+        🗑️ Limpiar
+      </button>
+    </div>
+    <div class="historial-list">
+      <div 
+        *ngFor="let item of historial; let i = index"
+        class="historial-item"
+        [class.valida]="item.valida"
+        [class.invalida]="!item.valida"
+      >
+        <div class="item-icon">
+          {{ item.valida ? '✅' : '❌' }}
+        </div>
+        <div class="item-info">
+          <strong>{{ item.roca.nombre }}</strong> ({{ item.roca.id }})
+          <small>{{ item.validador }} - {{ item.timestamp | date:'short' }}</small>
+        </div>
+        <div class="item-status">
+          {{ item.valida ? 'VÁLIDA' : 'NO VÁLIDA' }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Componentes de Salida -->
+  <app-salida-americana></app-salida-americana>
+  <app-salida-europea></app-salida-europea>
+</div>
+*/

@@ -1,0 +1,100 @@
+/*
+.entrada-reducida-container {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.compact-form {
+  width: 100%;
+}
+
+.compact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+input, select {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+input:focus, select:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.error-message-compact {
+  background: rgba(255, 0, 0, 0.2);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.button-group-compact {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btn-analyze, .btn-clear {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-analyze {
+  background: #4CAF50;
+  color: white;
+  flex: 1;
+}
+
+.btn-analyze:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+.btn-clear {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 50px;
+}
+
+.btn-clear:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: rotate(180deg);
+}
+*/

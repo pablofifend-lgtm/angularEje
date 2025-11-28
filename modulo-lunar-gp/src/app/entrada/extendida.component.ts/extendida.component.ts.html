@@ -1,0 +1,18 @@
+<p>extendida.component.ts works!</p>
+<h3>Formulario Extendido</h3>
+
+<label>ID</label>
+<input [(ngModel)]="roca.id" type="text" />
+
+<label>Nombre</label>
+<input [(ngModel)]="roca.nombre" type="text" />
+
+<label>Grupo</label>
+<select [(ngModel)]="roca.grupo">
+  <option value="igneas">Ígneas</option>
+  <option value="metamorficas">Metamórficas</option>
+  <option value="sedimentarias">Sedimentarias</option>
+</select>
+
+<br><br>
+<button (click)="enviar()">Enviar roca</button>
