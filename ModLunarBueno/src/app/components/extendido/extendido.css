@@ -1,0 +1,102 @@
+/* ===== Estilos generales ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+#formReducido {
+    max-width: 480px;
+    margin: auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#formReducido div,
+#formReducido label,
+#formReducido input,
+#formReducido select,
+#formReducido textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#formReducido input,
+#formReducido select,
+#formReducido textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+#formReducido input:focus,
+#formReducido select:focus,
+#formReducido textarea:focus {
+    outline: none;
+    border-color: #4a84ff;
+    box-shadow: 0 0 0 3px rgba(74, 132, 255, 0.25);
+}
+
+#formReducido textarea {
+    resize: vertical;
+}
+
+/* Etiquetas */
+#formReducido br+input,
+#formReducido br+select {
+    margin-top: 8px;
+}
+
+/* Layout de dos columnas para dureza y tamaño */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.row .col {
+    flex: 1;
+}
+
+/* Radios en línea */
+.inline {
+    margin-right: 18px;
+    font-size: 15px;
+}
+
+/* Botón */
+#formReducido button {
+    background: #4a84ff;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.25s, transform 0.1s;
+}
+
+#formReducido button:hover {
+    background: #3c6fe0;
+}
+
+#formReducido button:active {
+    transform: scale(0.97);
+}
+
+/* Salida */
+#output {
+    font-size: 15px;
+    padding: 10px;
+    background: #eef3ff;
+    border-left: 4px solid #4a84ff;
+    border-radius: 6px;
+}

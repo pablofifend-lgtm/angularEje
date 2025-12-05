@@ -35,12 +35,13 @@ export class FormCompo2 {
     )
   }*/
  constructor(){
+  
   this.form = new FormGroup({
-    id: new FormControl(0,Validators.required),
-    nombre: new FormControl(''),
-    edad: new FormControl(0),
-    peso: new FormControl(0),
-    altura: new FormControl(0),
+    id: new FormControl('',Validators.required),
+    nombre: new FormControl(Validators.required, Validators.minLength(8)),
+    edad: new FormControl(Validators.required, Validators.minLength(18)),
+    peso: new FormControl(Validators.required,Validators.minLength(50)),
+    altura: new FormControl(Validators.required, Validators.minLength(1.50)),
   });
   }
    calculaIMC() {

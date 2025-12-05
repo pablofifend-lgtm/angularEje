@@ -1,0 +1,45 @@
+.dropdown {
+  width: 200px;
+  position: relative;
+  font-family: sans-serif;
+}
+
+.toggle {
+  display: none;
+}
+
+.dropdown-btn {
+  display: block;
+  padding: 10px;
+  background: #ececec;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 6px;
+}
+
+.toggle:checked + .dropdown-btn + .dropdown-content {
+  display: block;
+}
+
+.item {
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.item:hover {
+  background: #eee;
+}
+
+.item input {
+  margin-right: 8px;
+}
